@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="invoice-container prime-border" style="border: 5px solid rgb(245, 245, 245);border-radius: 30px;">
+        
+        <header class="invoice-header">
+            <div class="logo">
+                <img src="tekzow_cover.jfif" alt="Tekzow Logo" style="height: 50px; width: auto;">
+            </div>
+            <div class="invoice-header-center">
+                <div class="invoice-details">
+                  <h1 style="color: rgb(16, 56, 201);">Invoice</h1>
+                  <p>Invoice No : <input type="text" id="invoice-number" value="111"></p>  <p>Invoice Date : <input type="date" id="invoice-date" value="2024-07-06"></p>  </div>
+              </div>
+            </header>
+
+        <section id="customer-details" class="invoice-info" style="margin-left: 2%;">
+            <div class="invoice-to">
+                <h1 style="color: rgb(11, 113, 237);font-weight: 200;">Invoice to:</h1>
+                <p><input type="text"></p>
+                <p>Vijayanagara</p>
+                <p>Bangalore, India</p>
+            </div>
+            <div class="invoice-from" style="margin-right: 2%;">
+                <h2 style="color: rgb(7, 108, 233);font-weight: 200;">Invoice from:</h2>
+                <p>Sankar Sir</p>
+                <p>Electronic City</p>
+                <p>Bangalore, India</p>
+            </div>
+        </section>
+
+        <table class="invoice-table">
+            <thead style="background-color: rgb(58, 102, 221);border-radius: 20%;">
+                <tr>
+                    <th style="color: white;">No.</th>
+                    <th style="color: white;">Item Description</th>
+                    <th style="color: white;">Price</th>
+                    <th style="color: white;">Student</th>
+                    <th style="color: white;">Total</th>
+                </tr>
+            </thead>
+            <tbody id="invoice-items">
+                <!-- Add your rows here -->
+            </tbody>
+        </table>
+        
+
+        <section id="course-details" class="course-details" style="margin-left: 7%;  color: rgb(4, 4, 4); font-weight: bold;">
+            <h1 style="color: rgb(76, 128, 241);font-weight: 200;"></h1>
+            <p id="course-description"></p>
+            <div class="course-prices">
+                <p>Price: ₹<span id="course-price"></span></p>
+                <p>Student ₹: <span id="course-student"></span></p> <p>GST : ₹<span id="course-gst"></span></p>
+                <p>Your Price: ₹<span id="course-total-price"></span></p>
+            </div>
+            <hr>
+            <section id="next-item-section" class="navigate-next">
+                <a href="#" id="next-item"></a>
+            </section>
+        </section>
+
+        <section id="navigate-back" class="navigate-back">
+            <a href="#" id="back-to-items"></a>
+        </section>
+
+        <section class="payment-method" style="margin-left: 7%;">
+            <h1 style="color: rgb(10, 117, 249);font-weight: 200;">Payment Method</h1>
+            <p>ACC Name: TEKZOW</p>
+            <p>ACC NO: 50200090658608</p>
+            <p>IFSC CODE: HDFC0009442</p>
+            <p>Branch: IDEAL HOMES</p>
+            <p>MMID: 9240003</p>
+            <div class="invoice-footer" style="display: block; text-align: end; margin-right: 10%;">
+                <p>  ____________________</p>
+                <h3><p>  Authorized signature  </p></h3>
+            </div>
+        </section>
+
+        <div class="popup">
+            <div class="contact-info">
+              <span class="icon"><i class="fas fa-phone-alt"></i></span>
+              <span class="text">+91 6362850853</span>
+            </div>
+            <div class="contact-info">
+              <span class="icon"><i class="fas fa-globe"></i></span>
+              <span class="text"><a href="http://tekzow.com" target="_blank">Tekzow.com</a></span>
+            </div>
+            <div class="contact-info">
+              <span class="icon"><i class="fas fa-envelope"></i></span>
+              <span class="text"><a href="mailto:contactus@tekzow.com">contactus@tekzow.com</a></span>
+            </div>
+            <div class="contact-info">
+              <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+              <span class="text">Electronic city, Phase-1, Bangalore</span>
+            </div>
+          </div>
+          
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
